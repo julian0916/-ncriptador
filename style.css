@@ -1,0 +1,50 @@
+div#parte1 {
+  width: 500px;
+  height: 500px;
+  float: left;
+  position: relative;
+  }
+
+div#parte2 {
+  width: 500px;
+  height: 500px;
+  float: right;
+  position: absolute;
+  left: 600px;
+  top: 190px;
+}
+
+span {
+  color: blue;
+  font-weight: 900;
+  font-size: 25px;
+  
+ 
+}
+
+textarea {
+  width: 500px;
+  height: 250px;
+}
+
+button {
+  color: rgb(233, 233, 243);
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: rgb(25, 9, 168);
+  width: 120px;
+  height: 40px;
+}
+
+h1 {
+  color: #15064d;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: lightblue;
+}
