@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Encriptador de codigos</title>
+</head>
+
+<body>
+  <h1>Encriptador de texto</h1>
+  <br>
+  <br>
+  <div id="parte1">
+  <span>Ingrese un texto para encriptar.
+  <br>
+   No utilice mayúsculas.
+  <br>
+   No utilice acento.
+  </span>
+  <br>
+  <br>
+  <div class="input-group">
+    <textarea class="form-control" aria-label="With textarea" id="txtArea"></textarea>
+  </div>
+  <br>
+  <button type="button" class="btn btn-primary" id="btn-encriptar">Encriptar</button>
+  <button type="button" class="btn btn-primary" id="btn-desencriptar">Desencriptar</button>
+  <br>
+  <br>
+  </div>
+  <div id="parte2">
+  <span class="input-group-text">Texto encriptado!!</span>
+  <br>
+  <br>
+  <div class="input-group">
+    <textarea class="form-control" aria-label="With textarea" id="msg"></textarea>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary" id="btn-copy">Copiar</button>
+  </div>
+  <footer>
+    <p>Creado por Julian Vargas.</p>
+  </footer>
+</body>
+<script src="js/encriptar.js"></script>
+<script src="js/desencriptar.js"></script>
+<script src="js/copy.js"></script>
+</html>
