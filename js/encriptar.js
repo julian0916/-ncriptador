@@ -3,7 +3,7 @@ var btnEncriptar = document.querySelector("#btn-encriptar").addEventListener("cl
 function encriptar(event) {
 
     if (validarTexto(entradaTexto)) {
-        alert("Ingrese un texto que no este vacio, no se permiten mayúsculas ni acento.")
+        alert("No se permiten mayúsculas ni acento.")
     } else {
         var entradaTexto = document.querySelector("#txtArea").value;
         entradaTexto = entradaTexto.replaceAll("e", "enter")
