@@ -1,196 +1,97 @@
-*{
+html {
+  font-family:  'Montserrat', sans-serif;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  background-image: url("imagen/lock.jpg");
+  background-size: 100%;
+  padding: 3rem 2rem;
 }
 
-body{
-  font-family: 'Roboto', 'Sans serif';
-}
-
-
-div#parte1 {
-  width: 500px;
-  height: 500px;
-  float: left;
-  position: relative;
-  top: 55px;
-  left: 50px;
+header {
+  color: #fff;
+  
   }
 
-div#parte2 {
-  width: 500px;
-  height: 500px;
-  float: right;
-  position: absolute;
-  left: 750px;
-  top: 190px;
+header h1 {
+  font-size: 4rem;
+  text-align: center;
 }
 
-span {
-  color: rgb(196, 196, 207);
-  font-weight: 900;
-  font-size: 25px;
-  
- 
+.container {
+  font-size: 20px;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  left: -200px;
 }
 
-textarea {
-  width: 500px;
-  height: 250px;
+.container2 {
+  font-size: 20px;
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  left: 250px;
+}
+
+.form-control {
+  position:relative;
+  left: 10px;
 }
 
 button {
-  color: rgb(233, 233, 243);
-  border-radius: 10px;
-  font-size: 15px;
-  font-weight: 900;
-  background-color: rgb(25, 9, 168);
-  width: 120px;
-  height: 40px;
-}
-
-h1 {
-  color: #eef0f1;
-  font-weight: bold;
-  font-size: 40px;
-  font-family: Arial;
-  text-transform: uppercase;
-  text-shadow: 7px 4px 5px rgb(95, 100, 96);
-  text-align:center;
-}
-
-
-
-.burbuja{
-  border-radius: 50%;
-  background: #fff;
-  opacity: .3;
-
-  position: absolute;
-  bottom: -150;
-  
-  animation: burbujas 3s linear infinite ;
-}
-
-.burbuja:nth-child(1){
-  width: 80px;
-  height: 80px;
-  left: 5%;
-  animation-duration: 3s;
-  animation-delay: 3s;
-}
-
-.burbuja:nth-child(2){
+  color: rgb(230, 225, 225);
+  background: #222;
+  height: 25px;
   width: 100px;
-  height: 100px;
-  left: 35%;
-  animation-duration: 3s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(3){
-  width: 20px;
-  height: 20px;
-  left: 15%;
-  animation-duration: 1.5s;
-  animation-delay: 7s;
-}
-
-.burbuja:nth-child(4){
-  width: 50px;
-  height: 50px;
-  left: 90%;
-  animation-duration: 6s;
-  animation-delay: 3s;
-}
-
-.burbuja:nth-child(5){
-  width: 70px;
-  height: 70px;
-  left: 65%;
-  animation-duration: 3s;
-  animation-delay: 1s;
-}
-
-.burbuja:nth-child(6){
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  animation-duration: 4s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(7){
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  animation-duration: 4s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(8){
-  width: 100;
-  height: 100px;
-  left: 52%;
-  animation-duration: 5s;
-  animation-delay: 5s;
-}
-
-.burbuja:nth-child(9){
-  width: 65px;
-  height: 65px;
-  left: 51%;
-  animation-duration: 3s;
-  animation-delay: 2s;
-}
-
-.burbuja:nth-child(10){
-  width: 40px;
-  height: 40px;
-  left: 35%;
-  animation-duration: 3s;
-  animation-delay: 4s;
-}
-
-
-@keyframes burbujas{
-  0%{
-      bottom: 0;
-      opacity: 0;
-  }
-  30%{
-      transform: translateX(30px);
-  }
-  50%{
-      opacity: .4;
-  }
-  100%{
-      bottom: 100vh;
-      opacity: 0;
-  }
-}
-@keyframes movimiento{
-  0%{
-      transform: translateY(0);
-  }
-  50%{
-      transform: translateY(30px);
-  }
-  100%{
-      transform: translateY(0);
-  }
-}
-
-.bg_animate{
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to right, #005C98, #505BDA);
+  border-radius: 10%;
   position: relative;
-  overflow: hidden;
+  left: 15px;
+  top: -10px;
+  }
+
+section article {
+  
+  color: rgb(252, 252, 252);
+  transition: all box-shadow 0.3s ease;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  cursor: pointer;
 }
 
-  footer{
-  color: #eef0f1;
-  
+section article:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 30%);
+}
+
+section article h2, section article p {
+  margin: 1rem;
+}
+
+footer {
+  position: relative;
+  left: 600px;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: cornflowerblue;
+}
+
+.texto1 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }

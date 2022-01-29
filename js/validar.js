@@ -1,17 +1,25 @@
-function validarTexto() {
-
-    var textoIngresado = document.getElementById("textArea").value;
-
-    if (/[A-Z]/.test(textoIngresado) || (/[á,é,í,ó,ú]/.test(textoIngresado)) || (/[0-9]/)) {
-
-        alert("Error")
-        validacion = false;
-
-    } else if ((textoIngresado == "")) {
-
-        alert("vacio");
-        validacion = false;
-    } else {
-        validacion = true;
+function validarTexto(entradaTexto) {
+  var esValidado = false;
+  var entradaTexto = document.querySelector("#txtArea").value;
+  
+  if (entradaTexto) {
+    for (var i = 0; i < entradaTexto.length; i++) {
+      let letraActual = entradaTexto.charAt(i);
+      if (
+        letraActual == letraActual.toUpperCase() ||
+        letraActual == "á" ||
+        letraActual == "é" ||
+        letraActual == "i" ||
+        letraActual == "ó" ||
+        letraActual == "ú"
+      ) {
+        esValidado = true;
+        break;
+        }
+      if (letraActual == " ") {
+      esValidado=false;
     }
+  }
+  return esValidado;
+}
 }

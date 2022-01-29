@@ -1,69 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet" type="text/css">
   <title>Encriptador de codigos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-  <header class="bg_animate">
+  <header>
     <h1>Encriptador de texto</h1>
-    <br>
-    <br>
-    <section>
-      <div id="parte1">
-        <span>Ingrese un texto para encriptar.
-          <br>
-          No utilice mayúsculas.
-          <br>
-          No utilice acento.
-        </span>
-        <br>
-        <br>
-        <div class="input-group">
-          <textarea class="form-control" aria-label="With textarea" id="txtArea"></textarea>
-        </div>
-        <br>
-        <button type="button" class="btn btn-primary" id="btn-encriptar">Encriptar</button>
-        <button type="button" class="btn btn-primary" id="btn-desencriptar">Desencriptar</button>
-        <br>
-        <br>
-      </div>
-    </section>
-    <div class="burbujas">
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-      <div class="burbuja"></div>
-    </div>
-    <section>
-      <div id="parte2">
-        
-        <span class="input-group-text">Texto encriptado!!</span>
-        <br>
-        <br>
-        <div class="input-group">
-          <textarea class="form-control" aria-label="With textarea" id="msg"></textarea>
-          <br>
-          <br>
-          <button type="button" class="btn btn-primary" id="btn-copy">Copiar</button>
-        </div>
-    </section>
+  </header>  
+  <section class="container">
+    <article>
+    <p>Ingrese un texto para encriptar.</p>
+    <p>No utilice mayúsculas.</p>
+    <p>No utilice acento.</p>
+    <textarea class="form-control" aria-label="With textarea" id="txtArea"></textarea>
+    <button type="button" class="btn btn-primary" id="btn-encriptar">Encriptar</button>
+    <button type="button" class="btn btn-primary" id="btn-desencriptar">Desencriptar</button>
+    </article>
+  </section>
+  <section class="container2">
+    <article>
+     <p class="texto1">Texto encriptado!!</p>
+    <textarea class="form-control" aria-label="With textarea" id="msg"></textarea>
+    <button type="button" class="btn btn-primary" id="btn-copy">Copiar</button>
+    </article>
+  </section>
+  <section>
+    <footer>
+        <a href="https://www.linkedin.com/in/jose-juli%C3%A1n-vargas-jim%C3%A9nez-78aa54210/">Contáctame aquí</a>
+        <p>Copyright 2022</p>
+    </footer>
+  </section>
   </header>
 </body>
 
 <script src="js/encriptar.js"></script>
 <script src="js/desencriptar.js"></script>
 <script src="js/copy.js"></script>
+<script src="js/validar.js"></script>
 
 </html>
