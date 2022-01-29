@@ -3,10 +3,10 @@ html {
 }
 
 body {
-  margin: 0;
   background-image: url("imagen/lock.jpg");
   background-size: 100%;
-  padding: 3rem 2rem;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 header {
