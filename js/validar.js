@@ -1,7 +1,7 @@
 function validarTexto(entradaTexto) {
   var esValidado = false;
   var entradaTexto = document.querySelector("#txtArea").value;
-  
+
   if (entradaTexto) {
     for (var i = 0; i < entradaTexto.length; i++) {
       let letraActual = entradaTexto.charAt(i);
@@ -15,11 +15,8 @@ function validarTexto(entradaTexto) {
       ) {
         esValidado = true;
         break;
-        }
-      if (letraActual == " ") {
-      esValidado=false;
+      }
     }
+    return esValidado;
   }
-  return esValidado;
-}
 }
